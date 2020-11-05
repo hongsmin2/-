@@ -1,0 +1,213 @@
+▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲↺↻↺↻↺↻↺↻
+<input type="button" value="▲" style="margin: 40px;">
+<input type="button" value="▼" style="margin: 40px;">
+<input type="button" value="◀" style="margin: 40px;">
+<input type="button" value="▶" style="margin: 40px;">
+
+<img src="버튼.jpg" width="20%">
+
+----가변 마진 적용 전-----
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Remote controller</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <style>
+          div{
+            margin-bottom: 100px;
+            margin-left: 200px;
+          }
+          #grid {
+            margin-left: 50px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+          }
+      </style>
+        <div id="grid">
+            <p>
+              <input type="button" value="▲" style="margin-left: 100px; margin-right: 100px;">
+              <input type="button" value="  " style="margin-left: 460px; margin-right: 100px;">
+            </p>
+            <p>
+              <input type="button" value="◀" style="margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px;">
+              <input type="button" value="▶" style="margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px;">
+              <input type="button" value="  " style="margin-left: 410px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px;">
+              <input type="button" value="  " style="margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px;">
+            </p>
+            <p>
+              <input type="button" value="▼" style="margin-left: 100px; margin-right: 100px;">
+              <input type="button" value="  " style="margin-left: 460px; margin-right: 100px;">
+            </p>
+        </div>
+        <div>
+            <input type="button" value="Land" style="margin-left: 100px; margin-right: 100px;">
+            <input type="button" value="Take off" style="margin-left: 100px; margin-right: 100px;">
+        </div>
+    </body>
+</html>
+----가변 마진 적용 후 이상----
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Remote controller</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <style>
+          div{
+            width: 31.25%;
+            margin: 0 auto;
+          }
+          #grid {
+            width: 31.25%;
+            margin: 0 auto;
+          }
+          #up {
+            width: 31.25%;
+            margin: 0 auto;
+          }
+          #side {
+            width: 31.24979253112033%;
+            margin-left: 70px;
+            margin-right: 0px;
+          }
+          #under {
+            width: 31.25%;
+            margin: 0 auto;
+          }
+      </style>
+        <div id="grid">
+            <div id="up">
+              <input type="button" value="▲" style="margin: 0 auto; color: red;">
+            </div>
+            <div id="side" style="background-color: red;">
+              <input type="button" value="◀" style="margin: 0 auto; color: red; margin-right: 30px;">
+              <input type="button" value="▶" style="margin: 0 auto; color: red;">
+            </div>
+            <div id="under">
+              <input type="button" value="▼" style="margin: 0 auto; color: red;">
+            </div>
+        </div>
+        <div>
+            <input type="button" value="Land" style="margin: 0 auto;">
+            <input type="button" value="Take off" style="margin: 0 auto;">
+        </div>
+    </body>
+</html>
+
+----11월5일-----
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Remote controller</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <style>
+          div{
+            margin-bottom: 100px;
+            margin-left: 200px;
+          }
+          #arrow-keys {
+            margin-left: 50px;
+            margin-bottom: 30px;
+            margin-right: 50px;
+            margin-top: 30px;
+            content-right: 30px;
+          }
+      </style>
+        <div id="arrow-keys">
+            <p>
+              <input type="button" value="▲" style="margin-left: 100px; margin-right: 100px;">
+            </p>
+            <p>
+              <input type="button" value="◀" style="margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px;">
+              <input type="button" value="▶" style="margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px;">
+            </p>
+            <p>
+              <input type="button" value="▼" style="margin-left: 100px; margin-right: 100px;">
+            </p>
+        </div>
+        <div id="none" style="margin: 0 auto;">
+          <p>
+            <input type="button" value="   " style="margin-left: 100px; margin-right: 100px;">
+          </p>
+          <p>
+            <input type="button" value="   " style="margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px;">
+            <input type="button" value="   " style="margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 10px;">
+          </p>
+          <p>
+            <input type="button" value="   " style="margin-left: 100px; margin-right: 100px;">
+          </p>
+        </div>
+    </body>
+</html>
+-------11 5 img-----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>조종기 사진</title>
+    </head>
+    <body>
+        <img src="조종기.PNG">
+    </body>
+</html>
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Remote controller</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <style>
+          div{
+            width: 31.25%;
+            margin: 0 auto;
+          }
+          #grid {
+            width: 31.25%;
+            margin: 0 auto;
+          }
+      </style>
+        <div id="grid">
+            <p>
+              <input type="button" value="   " style="margin: 0 auto; background-color: white;">
+              <input type="button" value="▲" style="margin: 0 auto; color: red;">
+              <input type="button" value="   " style="margin: 0 auto; background-color: white; border: 0px;">
+              <input type="button" value="  " style="margin: 0 auto; background-color: white; border: 0px;">
+              <input type="button" value="  " style="margin: 0 auto;">
+              <input type="button" value="  " style="margin: 0 auto; background-color: white; border: 0px;">
+            </p>
+            <p>
+              <input type="button" value="◀" style="margin: 0 auto; color: red;">
+              <input type="button" value="   " style="margin: 0 auto; background-color: white; border: 0px;">
+              <input type="button" value="▶" style="margin: 0 auto; color: red;">
+              <input type="button" value="  " style="margin: 0 auto;">
+              <input type="button" value="  " style="margin: 0 auto; background-color: white; border: 0px;">
+              <input type="button" value="  " style="margin: 0 auto;">
+            </p>
+            <p>
+              <input type="button" value="   " style="margin: 0 auto; background-color: white; border: 0px;">
+              <input type="button" value="▼" style="margin: 0 auto; color: red;">
+              <input type="button" value="   " style="margin: 0 auto; background-color: white; border: 0px;">
+              <input type="button" value="  " style="margin: 0 auto; background-color: white; border: 0px;">
+              <input type="button" value="  " style="margin: 0 auto;">
+              <input type="button" value="  " style="margin: 0 auto; background-color: white; border: 0px;">
+            </p>
+        </div>
+        <div>
+            <input type="button" value="Land" style="margin: 0 auto;">
+            <input type="button" value="  " style="margin: 0 auto; background-color: white; border: 0px;">
+            <input type="button" value="  " style="margin: 0 auto; background-color: white; border: 0px;">
+            <input type="button" value="  " style="margin: 0 auto; background-color: white; border: 0px;">
+            <input type="button" value="Take off" style="margin: 0 auto;">
+        </div>
+    </body>
+</html>
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
